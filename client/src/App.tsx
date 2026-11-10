@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="min-h-screen bg-whiteflex items-center justify-center">
+    <div className="min-h-screen bg-purple-500 flex items-center justify-center">
       <h1 className="text-5xl font-bold text-purple-500">
         KhdmaLink
       </h1>
