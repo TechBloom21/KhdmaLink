@@ -1,10 +1,17 @@
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/public/Home";
+import AuthPage from "./pages/auth/AuthPage";
+
 function App() {
   return (
-    <div className="min-h-screen bg-purple-500 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-purple-500">
-        KhdmaLink
-      </h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/auth" element={<AuthPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
